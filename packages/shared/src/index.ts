@@ -16,6 +16,10 @@ export const allTargets: Targets = {
     url: "vscode://file/${projectPath}${filePath}:${line}:${column}",
     label: "VSCode",
   },
+  cursor: {
+		url: "cursor://file/${projectPath}${filePath}:${line}:${column}",
+		label: "Cursor",
+	},
   webstorm: {
     url: "webstorm://open?file=${projectPath}${filePath}&line=${line}&column=${column}",
     label: "WebStorm",
